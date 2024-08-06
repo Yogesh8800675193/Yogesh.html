@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h2{color:blueviolet; margin:auto; width:80%; height: 2vw; text-align: center; margin-top: 1vw; font-size: 2vw;} 
+
+        #tame{color:blueviolet; font-size: 3vw; margin: auto; text-align: center; transition: 0.5s ease-in-out; margin-top: 3vw; width: 20vw; background-color: aqua;  border: 0.2vw blueviolet solid; border-radius: 1vw;}
+
+
+    </style>
+</head>
+<body>
+
+    <h2 > Creating instance of date class</h2>
+
+    <div id="tame"></div>
+
+    <script>
+
+         var a 
+
+          var b = document.getElementById("tame")
+       
+         
+
+         function show_time()
+         {
+            a= new Date()
+            b.innerHTML = a.toLocaleTimeString()
+         }
+
+         show_time()
+
+         
+         var c = setInterval("show_time()",1000)
+
+         b.onclick= function()
+        {
+           clearInterval(c)
+
+        }
+
+        b.ondblclick=function()
+        {
+         c = setInterval("show_time()",1000)
+          alert("clock is on now")
+
+        }
+
+        b.onwheel = function(event)
+
+          {
+            //alert(event.deltaY )
+
+            if(event.deltaY == 100)
+             
+            {
+                 b.style.transform="scale(1.5)"
+            }
+             
+            if(event.deltaY == -100)
+             
+             {
+                  b.style.transform="scale(1)"
+             }
+ 
+
+
+
+          }
+
+
+
+     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

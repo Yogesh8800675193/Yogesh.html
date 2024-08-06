@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advertisement</title>
+</head>
+<body>
+    
+    <script>
+        var mainbox= document.createElement('div');
+        mainbox.style.width="400px"
+        mainbox.style.height="200px";
+  
+        mainbox.style.textAlign="right"
+         mainbox.innerHTML="<button id='close' style='cursor:pointer; background:none; border:0.3px solid black'>x</button><video style='width:400px;'src='media/video1.mp4' controls autoplay>"
+         
+          
+        function showad(){
+                 
+            mainbox.style.position="absolute"
+            mainbox.style.top=Math.random()*500+"px"
+            mainbox.style.left=Math.random()*700+"px"
+            document.body.appendChild(mainbox)
+
+            document.getElementById("close").onclick =()=>{ document.body.removeChild(mainbox)}
+
+        }
+
+        var t=setInterval("showad()",5000)
+
+    </script>
+</body>
+</html>

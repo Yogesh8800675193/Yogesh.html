@@ -1,0 +1,75 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(30, 184, 184);
+}
+
+#header{
+    width: 90%;
+    height: 30vh;
+    background-color: gb(35, 133, 219);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#icon{
+    width: 30%;
+    height: 25vh;
+    background-color: alceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#icon img{
+    width: 10vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 10px grey;
+}
+
+#info{
+
+width: 70%;
+height: 30vh;
+box-sizing: border-box;
+padding: 0.2vw 1vw;
+background-color: aua;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+#info a{
+    text-decoration: none;
+    color: black;
+}
+
+#about{
+    margin-top: 5vw;
+}
+#about p{
+    font-size: 1.5vw;
+}
+#appimage{
+
+    width: 95%;
+    margin: auto;
+    margin-top:10vw;
+    display: flex;
+    justify-content: space-between;
+}
+#appimage div{
+    width: 18%;
+}
+#appimage img{
+    width: 100%;
+}
+#appimage h2{
+    text-align: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banners</title>
+</head>
+<style>
+#mainbanner{
+    position: absolute;
+    top: 18;
+    left: 5%;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    box-shadow: 6px 6px 19px rgb(0, 0, 0);
+    overflow: hidden;
+    perspective: 500px;
+    background-size: cover;
+    border-radius: 10px;
+    border-color: black;
+
+}
+.pic{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s ease-in-out;
+
+}
+
+.main{margin: auto;width: 100%;text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+</style>
+
+
+
+
+<body>
+    <div class="main"><h1>Making Add Banner With Button Using Js</h1></div>
+<div id="mainbanner"><button id="left" style="z-index: 100; position: absolute; left: 2%; background-color: rgb(253, 71, 126); border: none;  top: 50%;">&#10092</button><button id="right" style="z-index: 100; position: absolute; left: 96%;  background-color: rgb(253, 71, 126); border: none;  top: 50%;">&#10093</button></div>    
+
+
+    <script>
+
+var lft ,rgt
+lft=document.getElementById("left")
+rgt=document.getElementById("right")
+
+
+
+let p =new Array()
+let b=document.getElementById("mainbanner")
+
+
+for(let i=7; i>=0; i--){
+    p[i] = document.createElement("img")
+    p[i].src="images/a"+i+".jpg"
+    p[i].classList.add("pic")
+    b.appendChild(p[i])
+}
+
+var c= -1
+
+function movebanner(){
+ 
+    for(i=0;i<=6;i++)
+    {
+        p[i].style.opacity=0
+      
+    }
+
+    p[c].style.opacity=1
+  
+}
+
+rgt.onclick=function()
+{
+    if(c<6){
+        c++
+        movebanner()
+    }
+}
+
+lft.onclick=function()
+{
+    if(c>1){
+        c--
+        movebanner()
+    }
+}
+
+function changepic(){
+    document.title =c
+    if(c<=6)
+    {
+        c++
+    }else{
+        c=0
+    }
+    movebanner()
+    setTimeout("changepic()",4000)
+}
+changepic()
+
+
+
+
+
+
+    </script>
+</body>
+</html>

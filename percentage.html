@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      /* background-color: rgb(0, 0, 0) */
+      background-image: url("images/back.jpg") ;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      
+      
+    }
+
+    input::-webkit-outer-spin-button {
+      appearance: none;
+    }
+
+    ::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    #main {
+      width: 80%;
+      height: 60vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 15vw;
+    }
+
+    #total input {
+      width: 40vw;
+      height: 5vh;
+      outline: none;
+      background-color: #975f1d;
+
+      box-sizing: border-box;
+      padding: 2vw;
+      color: white;
+      border-radius: 10px;
+
+      text-align: center;
+      border: none;
+      border: 0.6vw solid #ffffff;
+      box-shadow: 0 0 10px gray;
+    }
+
+    #noram input {
+      width: 40vw;
+      height: 5vh;
+      color: white;
+      background-color: #975f1d;
+      outline: #ffffff;
+      box-sizing: border-box;
+      padding: 2vw;
+      text-align: center;
+      border-radius: 10px;
+
+      border: none;
+      border: 0.6vw solid #ffffff;
+      box-shadow: 0 0 10px gray;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    button {
+      width: 25vw;
+      height: 4vh;
+      background-color: white;
+      outline: none;
+      color: #975f1d;
+      font-weight: 700;
+      font-size: 4vw;
+      border-radius: 1vw;
+      cursor: pointer;
+      border: 0.5vw solid #975f1d;
+      transition: all 0.4s ease-in-out;
+    }
+
+    button:hover {
+      background: #975f1d;
+      border: 0.5vw solid #ffffff;
+      color: #ffffff;
+    }
+
+    #result {
+      background-color: white;
+      width: 65vw;
+      height: 8vh;
+      display: flex;
+      color: #975f1d;
+      align-items: center;
+      justify-content: center;
+      font-size: 6.5vw;
+      overflow: hidden;
+      /* overflow-x: scroll; */
+      box-sizing: border-box;
+      padding: 2vw;
+      border-radius: 20px;
+      border: 0.7vw solid #975f1d;
+    }
+
+    #result {
+      background-color: #975f1d;
+      border: 0.7vw solid #ffffff;
+      color: #ffffff;
+    }
+
+    ::placeholder {
+      color: #ffffff;
+    }
+
+    h2{color: #ffffff;
+    text-align: center;
+  font-size: 30px;
+margin-top: 100px;}
+
+    
+  </style>
+
+  <body>
+
+   <h2>Percentage Calculator</h2>
+    <div id="main">
+      <div id="total">
+        <input type="number" id="totals" placeholder="Enter Total Value" />
+      </div>
+      <h1>Of</h1>
+      <div id="noram">
+        <input type="number" id="val" placeholder="Enter Percent Value" />
+      </div>
+      <button id="enter">Enter</button>
+      <div id="result">Result</div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("enter");
+      btn.onclick = () => {
+        var total = document.getElementById("totals");
+        var val = document.getElementById("val");
+
+        var result = (val.value / total.value) * 100;
+        document.getElementById("result").innerHTML = "" + result + "%";
+      };
+    </script>
+  </body>
+</html>

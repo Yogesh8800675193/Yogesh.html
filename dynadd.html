@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="show()">
+
+    <h1 style="text-align:center; font-family: Arial, Helvetica, sans-serif; ">Dynamic add using Array in js</h1>
+
+    <h1 style="text-align:center; font-size: 3vw; margin-top: 0;">Today News</h1>
+
+    <div id="nb" style=" width: 100%;  padding: 40px; color:white; font-size: 2vw; font-family: arial black; text-transform: uppercase;"> NEWS</div>
+
+    <ol>
+
+    <script>
+
+        // post tested loop
+
+        // Array
+
+        // Index Array
+
+        var news = ["RS polls today: Disadvantage SP in UP, Cong keeps close watch in K'taka, Himachal","Delhi govt de-affiliates 12 DU colleges, refuse funding; teachers write to LG V K Saxena","After disagreeing with national survey, Odisha says it has 30 Royal Bengal Tigers, 8 cubs"]
+
+
+        var a = 0
+
+        var n = document.getElementById("nb")
+
+        var m = " "
+
+        var r,g,b
+
+        var a = 0;
+
+        function show()
+        { 
+            // r = Math.round(Math.random()*255)
+
+            // g = Math.round(Math.random()*255)
+
+            // b = Math.round(Math.random()*255)
+
+            n.innerHTML = news[a]
+
+            // n.style.color="rgb("+r+","+g+","+b+")"
+
+            
+            n.style.color="teal"
+
+            if(a<news.length-1)
+
+            {
+                a++
+            }
+
+            else
+            {
+                  a=0
+
+            }
+
+            setTimeout("show()",5000)
+
+
+
+
+
+        }
+
+    
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

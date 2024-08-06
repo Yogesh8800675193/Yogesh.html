@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas id="mycan"></canvas>
+
+    <script>
+
+    var r,g,body
+
+    var can = document.getElementById("mycan")
+
+    can.width =window.innerWidth
+
+    can.height = window.innerHeight
+
+    can.style.border="2px white dotted"
+
+    can.style.background="black"
+
+    var w = window.innerWidth
+
+    var h = window.innerHeight
+    var c = can.getContext("2d")
+
+    var bsize = 10
+
+    var r = Math.round(Math.random()*255)
+    var g = Math.round(Math.random()*255)
+    var b = Math.round(Math.random()*255)
+
+    var mycolor= "rgb("+r+","+g+","+b+")"
+
+    var counter = 1
+
+    function ran()
+     {
+        var r = Math.round(Math.random()*255)
+    var g = Math.round(Math.random()*255)
+    var b = Math.round(Math.random()*255)
+
+    var mycolor= "rgb("+r+","+g+","+b+")"
+    return(mycolor)
+     }
+
+     function f1()
+     {
+
+        for(var i =1;i<=50;i++)
+        {
+        c.beginPath();
+        c.moveTo(-500,-500)
+
+        c.lineTo(Math.round(Math.random()*w),Math.round(Math.random()*h))
+
+        c.fill()
+        c.lineWidth = Math.random()*5;
+        c.strokeStyle = ran ()
+        c.stroke();
+        c.closePath()
+
+        // c.beginPath()
+        // c.arc(800,400,100,0,2*Math.PI)
+        // // c.fillStyle="orange"
+        // c.fill()
+        }
+
+        counter++
+        if(counter>100)
+        {
+            counter=1
+            c.clearRect(0,0,w,h)
+
+        }
+            
+           document.title = counter
+           setTimeout("if()",10)
+
+     }
+
+       f1()
+
+
+    </script>
+    
+</body>
+</html>

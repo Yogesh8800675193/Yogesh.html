@@ -1,0 +1,67 @@
+*{
+    font-family:  Helvetica;
+  }
+  body{
+  background-size:cover;
+      background-image: url(images/3.jpg);
+     background-repeat: no-repeat;
+   background-attachment: fixed;
+  }
+  
+  
+  
+  
+  #box2{width: 20vw; height: 20vw; background-color: #f0efef; margin: auto; margin-top:13vw; border-radius: 0.9vw; opacity: 0.9; box-shadow: 10px 7px 5px #e99536;}
+  
+  #email{ width: 12vw; height: 1.4vw; font-size: 0.6vw; margin-top: 1vw; margin-left:4vw; border: none; outline: none; background-color: #ffab4c; border-radius: 0.2vw; padding: 0.3vw;}
+
+  
+  #otp{
+  
+    width: 3vw;
+    height: 1vw;
+    font-size: 0.5vw;
+    font-weight: 600;
+    
+    margin-left: 4vw; margin-top: 1vw; border-radius: 0.2vw; border: 0.03vw  #f7931e solid; color:#f7931e; cursor: pointer;
+  
+    
+  }
+  
+  
+  #pass{ width: 12vw; height: 1.4vw; font-size: 0.6vw; margin-top: 1vw; margin-left: 4vw; border: none; outline: none; background-color: #ffab4c; border-radius: 0.2vw; padding: 0.3vw;}
+
+  #eotp{ width: 5vw; height: 1.4vw; font-size: 0.6vw; margin-top: 1vw; margin-left: 4vw; border: none; outline: none; background-color: #ffab4c; border-radius: 0.2vw; padding: 0.3vw;}
+  
+  #fn{ width: 12vw; height: 1.4vw; font-size: 0.6vw; margin-top: 1vw; margin-left: 4vw; border: none; outline: none; background-color: #ffab4c; border-radius: 0.2vw; padding: 0.3vw;}
+  
+ 
+  
+  #box2 img{font-size: 1.5vw; font-weight: 800; margin-left: 6.9vw; padding-top: 1vw; width: 6vw;}
+  
+  #loginbutton{
+  
+    width: 4vw;
+    height: 1.2vw;
+    font-size: 0.7vw;
+    font-weight: 600;
+    
+    margin-left: 8vw;
+    margin-top: 1vw;
+    border-radius: 0.2vw;
+    border: 0.03vw  #f7931e solid;
+    color:#f7931e;
+    cursor: pointer;
+  
+    
+  }
+  #loginbutton:hover{
+  
+  
+    background-color: #f7931e;
+    color: black;
+  }
+
+  
+ 
+ 

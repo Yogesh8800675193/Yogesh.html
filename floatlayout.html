@@ -1,0 +1,128 @@
+<html>
+<head></head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+div{border:1px blue solid;transition:0.50s;}
+
+
+
+body{text-align:center;}
+
+#header{height:50px;width:75%;margin:auto;background:lightgray;}
+
+
+
+#navbar{width:80%;margin:auto;}
+
+
+
+#navbar ol li{list-style:none;display:inline;padding:20px;}
+#icon{display:none;}
+
+#left{
+width:100%;
+height:300px;
+float:left;
+}
+/*#middle{
+	float:left;
+width:39%;
+height:300px;
+}*/
+
+#right{
+float:left;
+width:100%;
+height:300px;
+}
+#footer{clear:both;height:50px;width:75%;margin:auto;background:black;color:white;}
+
+/*    Small devices (portrait tablets and large phones, 600px and up)     */
+
+@media only screen and (max-width: 600px)
+ {
+#header{background:green;}
+
+#navbar{width:18%;background:teal;margin-left:10px;}
+
+#navbar ol li{display:none;list-style:none;padding:20px;margin-left:-40px}
+#navbar:hover ol li {display:block;position:relative;width:100%;}
+#navbar:hover {display:block;position:relative;width:60%;}
+li:hover{cursor:ponter;background:yellow;}
+#icon{display:block;cursor:pointer;}
+
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+@media only screen and (min-width: 600px)
+{
+#header{background:pink;}
+} 
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+ {
+
+#header{background:yellow;}
+#navbar{position:relative; top:-150px;}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+ {
+#header{background:cyan;}
+#navbar{position:static; top:-150px;}
+} 
+
+
+</style>
+
+
+<body>
+
+
+<div id="header">header
+
+
+</div>
+
+
+
+<div id="navbar">
+<span id="menu"> <span id="icon">&#9776</span>
+<ol>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Product</a></li>
+	<li><a href="#">Services</a></li>
+	<li><a href="#">Data</a></li>
+</ol>
+
+</span>
+
+</div>
+
+<div id="main">
+
+<div id="left">up</div>
+  
+<div id="right">down</div>
+
+</div>
+
+
+<div id="footer">Footer</div>
+
+
+</div>
+
+</body>
+</html>

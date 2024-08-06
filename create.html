@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+</style>
+<body>
+
+    <h1 style="text-align: center; font-size: 3vw; font-weight: 800;">Create Div by random color</h1>
+
+    <button id="click">click here</button>
+    <div id="box"></div>
+
+
+    <script>
+    function random(){
+        let r =  Math.round(Math.random()*255)
+           let g =  Math.round(Math.random()*255)
+           let b =  Math.round(Math.random()*255)
+           
+           let mycolor = "rgb("+r+","+g+","+b+")"
+           return(mycolor)
+    }
+    var click = document.getElementById("click")
+
+    click.onclick=()=>
+    
+    {
+        var div = document.createElement("div")
+document.getElementById("box").appendChild(div)
+        
+        div.style="width:20vw; height:10vw; margin:50px; background-color:"+random()+";"
+     
+
+
+
+    }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

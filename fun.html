@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var d = document.createElement("img")
+        document.body.appendChild(d)
+        d.style ="width:35vw; height:28vw; margin-left:30vw; margin-top:8vw;"
+        d.src="images/01.jpg"
+
+        d.onclick = function()
+        {
+        //   alert(this.src)
+          d.style.transition="0.5s"
+        //   d.style.boxShadow="10px 10px 10px gray"
+        //   d.style.transform="scale(1.2)"
+        location.href="01.html"
+        }
+
+        d.onmouseover = function()
+        {
+          d.style.borderRadius="5px"
+          d.style.transition="0.5s"
+          d.style.boxShadow="5px 5px 5px #D7D6D6 "
+          d.style.transform="scale(1.2)"
+       
+
+        }
+         
+        d.onmouseout = function()
+
+        {
+             d.style.transform ="scale(1)"
+
+        }
+
+        var c = document.createElement("img")
+        document.body.appendChild(c)
+        c.style ="width:35vw; height:28vw; margin-left:30vw; margin-top:8vw;"
+        c.src="images/03.jpg"
+
+        c.onclick = function()
+        {
+        //   alert(this.src)
+          c.style.transition="0.5s"
+        //   c.style.boxShadow="10px 10px 10px gray"
+        //   c.style.transform="scale(1.2)"
+        location.href="03.html"
+        }
+
+        c.onmouseover = function()
+        {
+          c.style.borderRadius="5px"
+          c.style.transition="0.5s"
+          c.style.boxShadow="5px 5px 5px #D7D6D6 "
+          c.style.transform="scale(1.2)"
+
+        }
+         
+        c.onmouseout = function()
+
+        {
+             c.style.transform ="scale(1)"
+
+        }
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

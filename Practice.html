@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="practice.css" />
+    <title>Practice page html</title>
+  </head>
+  <body>
+    <h1>Pracitce Work</h1>
+    <div id="select">
+      <div id="html">Html & Css</div>
+      <div id="js">Javascript</div>
+      <div id="boot">Bootstrap</div>
+    </div>
+    <div id="htmldis">
+      <div id="htmldiv">
+        <div class="content"><a href="wikipedia.html">Red Fort</a></div>
+        <div class="content"><a href="photogallery.html">Photo Gallery</a></div>
+        <div class="content"><a href="Scorpio.html">Scorpio</a></div>
+        <div class="content"><a href="firstclass.html">First Class</a></div>
+        <div class="content"><a href="housing.html">Housing</a></div>
+        <div class="content"><a href="Icon.html">Fevicon</a></div>
+        <div class="content"><a href="responsive.html">Responsive web</a></div>
+        <div class="content"><a href="background.html">Background</a></div>
+        <div class="content"><a href="table.html">Result </a></div>
+        <div class="content"><a href="form.html">Login Form </a></div>
+        <div class="content"><a href="webanima1.html"> Animation </a></div>
+        <div class="content"><a href="banner.html"> Banner </a></div>
+        <div class="content"><a href="audio_video.html"> Video </a></div>
+        <div class="content"><a href="backvideo.html"> BG Video </a></div>
+        <div class="content"><a href="iframe.html"> IFrame </a></div>
+        <div class="content"><a href="floatlayout.html"> F-Layout </a></div>
+      </div>
+    </div>
+
+    <div id="jsdis">
+      <div id="jsdiv">
+        <div class="content">
+          <a href="addbanner.html">Banner</a>
+        </div>
+        <div class="content">
+          <a href="clock.html">Digital Clock</a>
+        </div>
+        <div class="content">
+          <a href="create.html">Create Div</a>
+        </div>
+        <div class="content">
+          <a href="dynadd.html">Dynamic Add</a>
+        </div>
+        <div class="content">
+          <a href="f.html">Alert Function</a>
+        </div>
+        <div class="content"><a href="fun.html">Events</a></div>
+        <div class="content">
+          <a href="prespec.html">Prespective Js</a>
+        </div>
+        <div class="content">
+          <a href="randomcolor.html">Random Color</a>
+        </div>
+        <div class="content"><a href="s.html">Clock</a></div>
+        <div class="content">
+          <a href="switchadd.html">Digital Add</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="bootdis">
+        
+      <div id="bootdiv">
+        <div class="content">
+          <a href="firstclassgrid.html">Grid</a>
+        </div>
+
+        <div class="content">
+          <a href="alert.html">Alert</a>
+        </div>
+
+        <div class="content">
+         <a href="imageplace.html">Image</a> 
+        </div>
+
+        <div class="content">
+          <a href="card.html">Card</a>
+        </div>
+        
+        <div class="content">
+          <a href="table.html">Table</a>
+        </div>
+
+        <div class="content">
+          <a href="accordion.html">Accordion</a> 
+        </div>
+        
+        <div class="content">
+          <a href="banner.html">Banner</a> 
+        </div>
+        
+         <div class="content">
+          <a href="offcanvas.html">Offcanvas</a> 
+        </div>
+        
+         <div class="content">
+          <a href="tooltips.html">Tooltips</a> 
+        </div>
+
+    </div>
+
+    <script>
+      var htmldis = document.getElementById("htmldis");
+      var jsdis = document.getElementById("jsdis");
+
+      var htmlbtn = document.getElementById("html");
+      var jsbtn = document.getElementById("js");
+
+      var htmlbtn = document.getElementById("html");
+      var jsbtn = document.getElementById("js");
+
+      var bootbtn = document.getElementById("boot");
+      var bootdis = document.getElementById("bootdis");
+
+      htmlbtn.onclick = () => {
+        bootdis.style.display = "none";
+        htmldis.style.display = "block";
+        jsdis.style.display = "none";
+        htmlbtn.style.border = "0.2vw solid black";
+        jsbtn.style.border = "none";
+        bootbtn.style.border = "none";
+      };
+      jsbtn.onclick = () => {
+        bootdis.style.display = "none";
+        htmldis.style.display = "none";
+        jsdis.style.display = "block";
+        jsbtn.style.border = "0.2vw solid black";
+        htmlbtn.style.border = "none";
+        bootbtn.style.border = "none";
+      };
+
+      bootbtn.onclick = () => {
+        jsdis.style.display = "none";
+        htmldis.style.display = "none";
+        bootdis.style.display = "block";
+        bootbtn.style.border = "0.2vw solid black";
+        htmlbtn.style.border = "none";
+        jsbtn.style.border = "none";
+      };
+    </script>
+  </body>
+</html>
+

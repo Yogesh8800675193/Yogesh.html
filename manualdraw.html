@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="position: absolute; width: 100%;">
+     <input type="color" onchange="f4(this)" value="black">
+
+    <button onclick="f2()">Brush +</button>
+
+    <button onclick="f3()">Brush -</button>
+
+    <button onclick="f1()">Eraser</button>
+
+    </div>
+
+    <canvas id="mycan"></canvas>
+
+    <script>
+
+      var can = document.getElementById("mycan")
+
+      can.width = window.innerWidth
+      can.height = window.innerHeight
+
+      can.style.border="2px black dotted"
+
+      var drawmode = true
+
+     var c = can.getContext("2d")
+
+     var bsize = 10
+
+    //  var drawcolor = "red"
+
+     var mousedown = false
+
+     can.addEventListener("mousemove",function(e)
+     {
+        if(mousedown){
+            c.lineTo(e.clientX, e.clientY)
+            c.strokeStyle=drawcolor
+            c.lineWidth = bsize
+            c.stroke();
+        }
+     })
+
+     can.addEventListener("mousedown",function(e)
+     {
+        mousedown = true
+
+        c.beginPath();
+        c.moveTo(e.clientX,e.clientY);
+     })
+
+     can.addEventListener("mouseup",function(e)
+     {
+        mousedown = false
+
+     })
+
+     function f1()
+     {
+        c.clearRect(0,0,window.innerWidth,window.innerHeight)
+     }
+
+
+     function f2()
+     {
+        if(bsize<50)
+        { bsize++}
+     }
+       
+     function f3()
+     {
+        if(bsize>1)
+        { bsize--}
+     }
+     
+
+     function f4(t)
+     {
+        drawcolor = t.value
+     }
+
+
+    </script>
+    
+</body>
+</html>

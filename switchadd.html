@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwtchAdd daybyday</title>
+</head>
+
+<style>
+
+    #add1{
+       width: 90%;
+       height: 400px;
+       box-shadow: 10px 10px 10px gray;
+       /* background-image: url(vid/avocado-1113_256.gif); */
+        background-size: cover;
+       background-color: bluevilet;
+       margin: auto;
+    }
+
+    #pic{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        
+
+    }
+
+
+</style>
+
+<body style="background-color: rgb(175, 104, 241);">
+
+    <h1 style="text-align: center; font-size: 55px;">Switch Add day by day through js</h1>
+
+    <div id="add1">
+    <img id="pic" src="vid/a1.gif" alt=""> 
+    </div>
+
+    <script>
+
+    // switch statement:- alternative of if
+
+    var d = new Date()
+
+    d.setDate(5)
+
+    var today = d.getDay()
+
+    var a = document.getElementById("add1")
+
+    var p = document.getElementById("pic")
+
+    switch(today)
+    {
+        case 0:
+            p.src = "vid/a1.gif"
+            Document.write("<h2>Today is a sunday</h2>")
+            break;
+
+            case 1:
+            p.src = "vid/a2.gif"
+            Document.write("<h2>Today is a Monday</h2>")
+            break;
+
+            case 2:
+            p.src = "vid/a3.gif"
+            Document.write("<h2>Today is a Tuesday</h2>")
+            break;
+
+            case 3:
+            p.src = "vid/a4.gif"
+            Document.write("<h2>Today is a Wednesday</h2>")
+            break;
+
+            case 4:
+            p.src = "vid/a5.gif"
+            Document.write("<h2>Today is a Thursday</h2>")
+            break;
+
+            case 5:
+            p.src = "vid/a6.gif"
+            Document.write("<h2>Today is a Friday</h2>")
+            break;
+
+            case 6:
+            p.src = "vid/a7.gif"
+            Document.write("<h2>Today is a Saturday</h2>")
+            break;
+
+            default:
+    }
+
+
+
+    </script>
+    
+</body>
+</html>

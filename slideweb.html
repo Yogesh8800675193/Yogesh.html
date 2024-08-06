@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+
+<head> <title> Slide Banner Animation </title> </head>
+
+
+<style>
+
+body{overflow:hidden;}
+
+@keyframes changepic
+
+ {background:red;}
+
+#slide 
+
+{ width:600%; background:ed;}
+
+@keyframes runbanner
+
+{
+  10%{left:0;}
+  20%{left:-16.70%;}
+  30%{left:-33.40;}
+  40%{left:-19.94;}
+  50%{left:-19.94;}
+  60%{left:-19.94;}
+  70%{left:-19.94;}
+  80%{left:-19.94;}
+  90%{left:-19.94;}
+
+}
+  
+  
+.picstyle 
+{ 
+
+    width:16.70%;
+    height:400px;
+    position:relative;
+    top:0px;
+    left:0px;
+    marign:5px;
+    box-shadow:10px 10px 10px gray;
+    animation:runbanner 30s infintine alternate;
+
+ }
+
+</style>
+
+<body>
+
+<div id="slide">
+
+<img src="picture/11.jpg" class="picstyle">
+<img src="picture/22.jpg" class="picstyle">
+<img src="picture/33.jpg" class="picstyle">
+<img src="picture/44.jpg" class="picstyle">
+<img src="picture/55.jpg" class="picstyle">
+<img src="picture/66.jpg" class="picstyle">
+<!--<img src="picture/105.jpg" class="picstyle">
+<img src="picture/205.jpg" class="picstyle">
+<img src="picture/305.jpg" class="picstyle">
+<img src="picture/405.jpg" class="picstyle"> -->
+
+</div>
+
+
+
+
+</body>
+</html>
