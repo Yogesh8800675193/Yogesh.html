@@ -1,0 +1,194 @@
+body {
+    font-family: "poppins", sans-serif;
+    color: #af1e1e;
+    /* background-image: url("https://img.freepik.com/free-vector/premium-golden-flowers-background-with-text-space_1017-32460.jpg"); */
+  }
+
+  /* #box{width: 100%;
+      height:auto;
+     background-color:#DFB7A9;
+    background-image: url("https://ewm.swiss/application/files/3515/9341/7792/jewellery_web_design_by_EWM_web_design_agency_Geneva.jpg");
+    
+ } */
+
+ #box{width: 100%;
+  
+ background-color:#DFB7A9;
+background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-taobao-jewelry-fresh-and-simple-gold-jewelry-poster-picture-image_1034493.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+/* .ring .btn:hover{
+  background-color: #552919;
+color: #ffffff;
+outline: #552919;
+} */
+
+
+.navbar li:hover>a {
+  color: #552919;
+  font-weight: 600;
+}
+
+.navbar .but:hover>a {
+  background-color: #552919;
+color: #ffffff;
+}
+
+.navbar .btu:hover>a {
+  background-color: #552919;
+color: #ffffff;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+  
+
+.container-fluid{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+ */
+} 
+
+.card{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.card>img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+
+
+}
+
+.content{
+  position: absolute;
+  bottom: -150px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card:hover .content{
+  bottom: 20px;
+  
+  
+}
+
+#black .card:hover img{
+  filter: brightness(0.6);
+ 
+}
+
+
+/* .card:hover img{
+  filter: brightness(0.6);
+  box-shadow:10px 10px 10px #DFB7A9;
+} */
+
+
+
+ .container-fluid #carouselExampleAutoplaying .carousel-item img{width: 50%;
+   height: 50vh; 
+   object-fit:contain,cover;
+   border:#552919;
+  }
+
+  /* img hover  */
+
+/* .container .row .col .card:hover img{transition: all 0.70s;}
+
+.container .row .col .card:hover img{transform: scale(1.05);} */
+
+
+
+.container .row .col:hover .card{transition: all 0.50s;}
+
+.container .row .col:hover .card{transform: scale(1.04);}
+
+.container .row .col .card{box-shadow: 2px 3px 5px rgb(78, 78, 78); background-color:rgba(255, 235, 235, 0.285); backdrop-filter: blur(5px);}
+
+#hover .container .card { box-shadow: 3px 5px 10px rgb(78, 78, 78);  }
+
+
+#footer {
+  margin-top: 20px;
+  background: #DFB7A9;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+ 
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  
+}
+
+#footer .social-links a:hover {
+ background:  #552919;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+/* #footer .credits {
+  font-size: 13px;
+} */
+
+#black .container-fluid .card .content{text-align: center;}
